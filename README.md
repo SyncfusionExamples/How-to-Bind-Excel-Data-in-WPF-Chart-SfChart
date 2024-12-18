@@ -11,7 +11,7 @@ To work with Excel data in WPF, you need to install the following NuGet packages
 •	`Syncfusion.SfChart.WPF` for the WPF chart control.
 •	`Syncfusion.XlsIO.WPF` for reading Excel files.
 
-You can install these packages using the NuGet Package Manager.
+You can install these packages using the [NuGet Package Manager](https://www.nuget.org/).
 
 
 2. Create the Data Model
@@ -33,11 +33,8 @@ public class ProductSales
 
     1. Right-click on the project in the Solution Explorer.
     2. Select Add > Existing Item... and browse to the Excel file (e.g., Data.xlsx) you want to include.
-    3. Select the file and click Add.
-    4. Right-click on the added Excel file in the Solution Explorer.
-    5. Select Properties.
-    6. Set the `Build Action` property to `Embedded resource`.
-    7. Set the `Copy to Output Directory` property to `Copy if newer` or (`Copy always` if you want the file copied every time you build).
+    3. Right-click on the added Excel file in the Solution Explorer and select Properties.
+    4. Set the `Build Action` property to `Embedded resource` and the `Copy to Output Directory` property to `Copy if newer` or (`Copy always` if you want the file copied every time you build).
 
 4. Read Data from the Excel File
 
@@ -95,12 +92,9 @@ public class ViewModel
 
  ```
 
-Replace the file path with the actual path to your Excel file.
+5. Configuring the Syncfusion WPF Chart
 
-
-5. Create the WPF SfChart
-
-Define the SfChart in XAML to display the data.
+Let’s configure the Syncfusion WPF Charts control using this [documentation](https://help.syncfusion.com/wpf/charts/getting-started).
 
 **[XAML]**
  
@@ -135,7 +129,7 @@ Define the SfChart in XAML to display the data.
 
 ## Output
 
-When you run the application, the chart will display the data from the Excel file. The following image illustrates the [WPF Chart]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) successfully bind Excel data to the WPF SfChart control.
+The following image illustrates the [WPF Chart]( https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.SfChart.html) successfully bind Excel data to the WPF SfChart control.
  
  ![Bind Excel data in WPF Chart](https://support.syncfusion.com/kb/agent/attachment/article/18452/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM0MDcwIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.7YFfaueQm4BYLGMVmwvIvbP6AEpAtQ3e1zh8hkAGk2g)
 
