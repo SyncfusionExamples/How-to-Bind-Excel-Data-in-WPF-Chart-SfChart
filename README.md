@@ -139,4 +139,4 @@ The following image illustrates the [WPF Chart]( https://help.syncfusion.com/cr/
 
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to a shorter name before building the project.
 
-For more details, refer to the KB on [how to bind excel data in WPF chart control?]().
+For more details, refer to the KB on [How to Bind Excel Data in WPF Chart Control?]().
