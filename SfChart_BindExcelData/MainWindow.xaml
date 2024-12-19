@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
         xmlns:local="clr-namespace:SfChart_BindExcelData"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" Title="MainWindow">
 
     <Window.DataContext>
         <local:ViewModel />
     </Window.DataContext>
 
-    <Border Padding="7" BorderThickness="2" BorderBrush="LightGray" CornerRadius="10" Width="1200" Height="700">
+    <Border Padding="7" Margin="10" BorderThickness="2" BorderBrush="LightGray" CornerRadius="10">
         <Grid>
             <syncfusion:SfChart x:Name="cartesianChart" Header="Product Sales Report" Foreground="Black" FontSize="20" FontWeight="SemiBold">
                 <!-- Primary Axis -->
