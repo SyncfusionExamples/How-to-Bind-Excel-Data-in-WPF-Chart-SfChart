@@ -38,7 +38,7 @@ public class ProductSales
 
 4. Read Data from the Excel File
 
-Create a method to read data from the Excel file and convert it into a collection of ProductSales objects. The following example uses the `Syncfusion.XlsIO.WPF` library.
+In this step, define a ViewModel class that holds the data collections for the chart and includes a method to read data from the Excel file, converting it into a collection of ProductSales objects. The following example utilizes the `Syncfusion.XlsIO.WPF` library.
 
 **[C#]**
 
@@ -62,7 +62,7 @@ public class ViewModel
         ProductCData = new ObservableCollection<ProductSales>();
         
         // Load Excel data
-        LoadExcelData("Data.xlsx");
+        LoadExcelData("Resource\\Data.xlsx");
     }
 
     private void LoadExcelData(string filePath)

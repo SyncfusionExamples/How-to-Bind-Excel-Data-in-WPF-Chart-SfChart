@@ -17,7 +17,7 @@ namespace SfChart_BindExcelData
             ProductCData = new ObservableCollection<ProductSales>();
 
             // Load Excel data
-            LoadExcelData("Data.xlsx");
+            LoadExcelData("Resource\\Data.xlsx");
         }
 
         private void LoadExcelData(string filePath)

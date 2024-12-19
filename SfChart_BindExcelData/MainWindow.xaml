@@ -12,9 +12,9 @@
         <local:ViewModel />
     </Window.DataContext>
 
-    <Border Margin="20" Padding="7" BorderThickness="2" BorderBrush="LightGray" CornerRadius="10" Width="1200" Height="700">
+    <Border Padding="7" BorderThickness="2" BorderBrush="LightGray" CornerRadius="10" Width="1200" Height="700">
         <Grid>
-            <syncfusion:SfChart x:Name="cartesianChart" Header="Product Sales Report" Margin="10" Foreground="Black" FontSize="20" FontWeight="SemiBold">
+            <syncfusion:SfChart x:Name="cartesianChart" Header="Product Sales Report" Foreground="Black" FontSize="20" FontWeight="SemiBold">
                 <!-- Primary Axis -->
                 <syncfusion:SfChart.PrimaryAxis>
                     <syncfusion:CategoryAxis Header="Month" FontSize="12">
@@ -32,6 +32,10 @@
                         </syncfusion:NumericalAxis.HeaderStyle>
                     </syncfusion:NumericalAxis>
                 </syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:SfChart.Legend>
+                    <syncfusion:ChartLegend FontSize="14"/>
+                </syncfusion:SfChart.Legend>
 
                 <!-- Column Series 1 -->
                 <syncfusion:ColumnSeries ItemsSource="{Binding ProductAData}" 
@@ -57,10 +61,6 @@
                                          Label="Product C" 
                                          Interior="#A05EB5" 
                                          ShowTooltip="True" />
-
-                <syncfusion:SfChart.Legend>
-                    <syncfusion:ChartLegend FontSize="14"/>
-                </syncfusion:SfChart.Legend>
             </syncfusion:SfChart>
         </Grid>
     </Border>
