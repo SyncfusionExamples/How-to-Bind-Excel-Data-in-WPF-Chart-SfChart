@@ -4,7 +4,7 @@ This article explains how to bind data from an Excel file to a [Syncfusion WPF S
 
 ## Steps to Bind Excel Data in WPF Charts
 
-1. Install Required NuGet Packages
+### 1. Install Required NuGet Packages
 
 To work with Excel data in WPF, you need to install the following NuGet packages.
 
@@ -14,7 +14,7 @@ To work with Excel data in WPF, you need to install the following NuGet packages
 You can install these packages using the [NuGet Package Manager](https://www.nuget.org/).
 
 
-2. Create the Data Model
+### 2. Create the Data Model
 
 Define a data model to hold the Excel data. For example, a class ProductSales can represent each row of data.
 
@@ -29,16 +29,16 @@ public class ProductSales
  ```
  
 
-3. Add Excel File to the Project and set Excel File Properties
+### 3. Add Excel File to the Project and set Excel File Properties
 
     1. Right-click on the project in the Solution Explorer.
     2. Select Add > Existing Item... and browse to the Excel file (e.g., Data.xlsx) you want to include.
     3. Right-click on the added Excel file in the Solution Explorer and select Properties.
     4. Set the `Build Action` property to `Embedded resource` and the `Copy to Output Directory` property to `Copy if newer` or (`Copy always` if you want the file copied every time you build).
 
-4. Read Data from the Excel File
+### 4. Read Data from the Excel File
 
-In this step, define a ViewModel class that holds the data collections for the chart and includes a method to read data from the Excel file, converting it into a collection of ProductSales objects. The following example utilizes the `Syncfusion.XlsIO.WPF` library.
+In this step, define a **ViewModel** class that holds the data collections for the chart and includes a method to read data from the Excel file, converting it into a collection of **ProductSales** objects. The following example utilizes the `Syncfusion.XlsIO.WPF` library.
 
 **[C#]**
 
@@ -92,7 +92,7 @@ public class ViewModel
 
  ```
 
-5. Configuring the Syncfusion WPF Chart
+### 5. Configuring the Syncfusion WPF Chart
 
 Let’s configure the Syncfusion WPF Charts control using this [documentation](https://help.syncfusion.com/wpf/charts/getting-started).
 
