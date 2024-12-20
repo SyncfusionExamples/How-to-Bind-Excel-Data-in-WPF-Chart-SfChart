@@ -76,13 +76,9 @@ public class ViewModel
             for (int i = 2; i <= lastRow; i++) // Assuming headers are in Row 1
             {
                 string month = worksheet[$"A{i}"].Text;
-                double value1 = worksheet[$"B{i}"].Number;
-                double value2 = worksheet[$"C{i}"].Number;
-                double value3 = worksheet[$"D{i}"].Number;
-    
-                ProductAData.Add(new ProductSales { Month = month, Value = value1 });
-                ProductBData.Add(new ProductSales { Month = month, Value = value2 });
-                ProductCData.Add(new ProductSales { Month = month, Value = value3 });
+                ProductAData.Add(new ProductSales { Month = month, Value = worksheet[$"B{i}"].Number });
+                ProductBData.Add(new ProductSales { Month = month, Value = worksheet[$"C{i}"].Number });
+                ProductCData.Add(new ProductSales { Month = month, Value = worksheet[$"D{i}"].Number });
             }
     
             workbook.Close();
