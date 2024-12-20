@@ -1,4 +1,4 @@
-# How-to-Bind-Excel-Data-in-WPF-Chart-SfChart
+# How to Bind Excel Data in WPF SfChart?
 
 This article explains how to bind data from an Excel file to a [Syncfusion WPF SfChart]( https://www.syncfusion.com/wpf-controls/charts) control. By following the steps outlined below, you will be able to load Excel data and display it in the chart.
 
