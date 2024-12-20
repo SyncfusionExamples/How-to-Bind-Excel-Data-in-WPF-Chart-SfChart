@@ -1,4 +1,4 @@
-# How-to-Bind-Excel-Data-in-WPF-Chart-SfChart
+# How to Bind Excel Data in WPF SfChart?
 
 This article explains how to bind data from an Excel file to a [Syncfusion WPF SfChart]( https://www.syncfusion.com/wpf-controls/charts) control. By following the steps outlined below, you will be able to load Excel data and display it in the chart.
 
@@ -35,6 +35,7 @@ public class ProductSales
     2. Select Add > Existing Item... and browse to the Excel file (e.g., Data.xlsx) you want to include.
     3. Right-click on the added Excel file in the Solution Explorer and select Properties.
     4. Set the `Build Action` property to `Embedded resource` and the `Copy to Output Directory` property to `Copy if newer` or (`Copy always` if you want the file copied every time you build).
+![SChart_ExcelImage_WPF](https://github.com/user-attachments/assets/6d394da1-018c-4239-a1e4-15e4b3eeae87)
 
 ### 4. Read Data from the Excel File
 
@@ -76,13 +77,9 @@ public class ViewModel
             for (int i = 2; i <= lastRow; i++) // Assuming headers are in Row 1
             {
                 string month = worksheet[$"A{i}"].Text;
-                double value1 = worksheet[$"B{i}"].Number;
-                double value2 = worksheet[$"C{i}"].Number;
-                double value3 = worksheet[$"D{i}"].Number;
-    
-                ProductAData.Add(new ProductSales { Month = month, Value = value1 });
-                ProductBData.Add(new ProductSales { Month = month, Value = value2 });
-                ProductCData.Add(new ProductSales { Month = month, Value = value3 });
+                ProductAData.Add(new ProductSales { Month = month, Value = worksheet[$"B{i}"].Number });
+                ProductBData.Add(new ProductSales { Month = month, Value = worksheet[$"C{i}"].Number });
+                ProductCData.Add(new ProductSales { Month = month, Value = worksheet[$"D{i}"].Number });
             }
     
             workbook.Close();
