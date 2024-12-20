@@ -87,6 +87,8 @@ public class ViewModel
 }
 
  ```
+![SChart_ExcelImage_WPF](https://github.com/user-attachments/assets/5aaaf71f-f3eb-4652-a389-92ccc2476ee6)
+
 
 ### 5. Configuring the Syncfusion WPF Chart
 
